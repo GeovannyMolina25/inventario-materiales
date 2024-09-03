@@ -14,10 +14,12 @@ function MaterialForm({ addMaterial }) {
   };
 
   return (
+    //formulario para el registro de productos
     <form onSubmit={handleSubmit}>
+      
       <input
         type="text"
-        placeholder="Material Name"
+        placeholder="Nombre del material"
         value={name}
         onChange={(e) => setName(e.target.value)}
       />
@@ -27,7 +29,7 @@ function MaterialForm({ addMaterial }) {
         value={quantity}
         onChange={(e) => setQuantity(e.target.value)}
       />
-      <button type="submit">Add Material</button>
+      <button type="submit">Guardar Material</button>
     </form>
   );
 }
